@@ -75,6 +75,7 @@ function ContactListCtrl($scope, $http) {
     vm.cancelEdit = function() {
         vm.editMode = false;
         vm.contact = {};
+        vm.getAllContacts();
     }
 
 }
