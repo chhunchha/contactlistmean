@@ -22,7 +22,7 @@ function errorHandler(err, req, res, next) {
     res.status(500).render("error_template", { error: err});
 }
 
-MongoClient.connect(url,function(err, db){
+MongoClient.connect(process.env.MONGODB_URI,function(err, db){
     assert.equal(null, err);
     console.log('Successfully connected to MongoDB.');
 

@@ -1,0 +1,22 @@
+$heroku create
+
+$  heroku addons:create mongolab
+/usr/local/heroku/lib/heroku/jsplugin.rb:110: warning: Insecure world writable dir /Users/chhunchha in PATH, mode 040777
+Creating mongolab-defined-45694... done, (free)
+Adding mongolab-defined-45694 to fierce-ocean-73259... done
+Setting MONGODB_URI and restarting fierce-ocean-73259... done, v4
+Welcome to mLab.  Your new subscription is being created and will be available shortly.  Please consult the mLab Add-on Admin UI to check on its progress.
+Use `heroku addons:docs mongolab` to view documentation.
+
+$git remote -v
+heroku	https://git.heroku.com/fierce-ocean-73259.git (fetch)
+heroku	https://git.heroku.com/fierce-ocean-73259.git (push)
+origin	https://github.com/chhunchha/contactlistmean (fetch)
+origin	https://github.com/chhunchha/contactlistmean (push)
+
+
+$heroku git:remote -a fierce-ocean-73259
+/usr/local/heroku/lib/heroku/jsplugin.rb:110: warning: Insecure world writable dir /Users/chhunchha in PATH, mode 040777
+set git remote heroku to https://git.heroku.com/fierce-ocean-73259.git
+
+$ git push heroku master
