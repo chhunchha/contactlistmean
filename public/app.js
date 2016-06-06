@@ -47,7 +47,7 @@ function ContactListCtrl($scope, $http) {
     }
 
     vm.updateContact = function() {
-        $http.put('/contacts/' + vm.contact._id, $scope.contact).then(function(response){
+        $http.put('/contacts/' + vm.contact._id, vm.contact).then(function(response){
             console.log("After update " + response);
             vm.contact = {};
             vm.getAllContacts();

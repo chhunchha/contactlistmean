@@ -38,6 +38,9 @@
                         <input ng-model="ctrl.contact.phone" class="form-control" placeholder="Phone XXX-XXX-XXXX"/>
                     </td>
                     <td>
+                        <span ng-click="ctrl.saveContact()" class="glyphicon glyphicon-floppy-save" aria-hidden="true" style="padding-right: 10px;"></span>
+
+
                         <button ng-click="ctrl.saveContact()" class="btn btn-primary">Save</button>
                         <button ng-click="ctrl.cancelEdit()" class="btn btn-warning">Cancel</button>
                     </td>
